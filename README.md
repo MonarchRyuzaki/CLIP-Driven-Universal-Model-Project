@@ -78,6 +78,10 @@ python pred_pseudo.py --data_root_path PATH_TO_IMG_DIR --result_save_path PATH_T
 !git config --global user.email "your-email"
 !git push https://<github Auth token>@github.com/MonarchRyuzaki/CLIP-Driven-Universal-Model-Project.git
 !pip install -r requirements.txt
+!cd pretrained_weights/
+!wget https://github.com/Project-MONAI/MONAI-extra-test-data/releases/download/0.8.1/swin_unetr.base_5000ep_f48_lr2e-4_pretrained.pt
+!wget wget https://www.dropbox.com/s/lh5kuyjxwjsxjpl/Genesis_Chest_CT.pt
+!cd ../
 ```
 
 **Dataset Pre-Process**
