@@ -12,17 +12,17 @@
 
 This repository provides the official implementation of Universal Model.
 
-`<b>`CLIP-Driven Universal Model for Organ Segmentation and Tumor Detection`</b>` `<br/>`
+`<b>`CLIP-Driven Universal Model for Organ Segmentation and Tumor Detection `</b>` `<br/>`
 ${\color{red} {\textbf{Rank First in Medical Segmentation Decathlon (MSD) Competition}}}$ (see [leaderboard](https://decathlon-10.grand-challenge.org/evaluation/challenge/leaderboard/)) `<br/>`
-[Jie Liu](https://ljwztc.github.io)`<sup>`1`</sup>`, [Yixiao Zhang](https://scholar.google.com/citations?hl=en&user=lU3wroMAAAAJ)`<sup>`2`</sup>`, [Jie-Neng Chen](https://scholar.google.com/citations?hl=en&user=yLYj88sAAAAJ)`<sup>`2`</sup>`,  [Junfei Xiao](https://lambert-x.github.io)`<sup>`2`</sup>`, [Yongyi Lu](https://scholar.google.com/citations?hl=en&user=rIJ99V4AAAAJ)`<sup>`2`</sup>`, `<br/>`
-[Yixuan Yuan](https://scholar.google.com.au/citations?user=Aho5Jv8AAAAJ&hl=en)`<sup>`1`</sup>`, [Alan Yuille](https://scholar.google.com/citations?user=FJ-huxgAAAAJ&hl=en)`<sup>`2`</sup>`, [Yucheng Tang](https://tangy5.github.io)`<sup>`3`</sup>`, [Zongwei Zhou](https://www.zongweiz.com)`<sup>`2`</sup>` `<br/>`
+[Jie Liu](https://ljwztc.github.io) `<sup>`1 `</sup>`, [Yixiao Zhang](https://scholar.google.com/citations?hl=en&user=lU3wroMAAAAJ) `<sup>`2 `</sup>`, [Jie-Neng Chen](https://scholar.google.com/citations?hl=en&user=yLYj88sAAAAJ) `<sup>`2 `</sup>`,  [Junfei Xiao](https://lambert-x.github.io) `<sup>`2 `</sup>`, [Yongyi Lu](https://scholar.google.com/citations?hl=en&user=rIJ99V4AAAAJ) `<sup>`2 `</sup>`, `<br/>`
+[Yixuan Yuan](https://scholar.google.com.au/citations?user=Aho5Jv8AAAAJ&hl=en) `<sup>`1 `</sup>`, [Alan Yuille](https://scholar.google.com/citations?user=FJ-huxgAAAAJ&hl=en) `<sup>`2 `</sup>`, [Yucheng Tang](https://tangy5.github.io) `<sup>`3 `</sup>`, [Zongwei Zhou](https://www.zongweiz.com) `<sup>`2 `</sup>` `<br/>`
 `<sup>`1 `</sup>`City University of Hong Kong,   `<sup>`2 `</sup>`Johns Hopkins University,   `<sup>`3 `</sup>`NVIDIA `<br/>`
 ICCV, 2023 `<br/>`
 [paper](https://arxiv.org/pdf/2301.00785.pdf) | [code](https://github.com/ljwztc/CLIP-Driven-Universal-Model) | [slides](https://github.com/ljwztc/CLIP-Driven-Universal-Model/blob/main/documents/slides.pdf) | [poster](https://github.com/ljwztc/CLIP-Driven-Universal-Model/blob/main/documents/poster.pdf) | [talk](https://www.youtube.com/watch?v=bJpI9tCTsuA) | blog
 
-`<b>`Large Language-Image Model for Multi-Organ Segmentation and Cancer Detection from Computed Tomography`</b>` `<br/>`
-[Jie Liu](https://ljwztc.github.io)`<sup>`1`</sup>`, [Yixiao Zhang](https://scholar.google.com/citations?hl=en&user=lU3wroMAAAAJ)`<sup>`2`</sup>`, [Jie-Neng Chen](https://scholar.google.com/citations?hl=en&user=yLYj88sAAAAJ)`<sup>`2`</sup>`,  [Junfei Xiao](https://lambert-x.github.io)`<sup>`2`</sup>`, [Yongyi Lu](https://scholar.google.com/citations?hl=en&user=rIJ99V4AAAAJ)`<sup>`2`</sup>`, `<br/>`
-[Yixuan Yuan](https://scholar.google.com.au/citations?user=Aho5Jv8AAAAJ&hl=en)`<sup>`1`</sup>`, [Alan Yuille](https://scholar.google.com/citations?user=FJ-huxgAAAAJ&hl=en)`<sup>`2`</sup>`, [Yucheng Tang](https://tangy5.github.io)`<sup>`3`</sup>`, [Zongwei Zhou](https://www.zongweiz.com)`<sup>`2`</sup>` `<br/>`
+`<b>`Large Language-Image Model for Multi-Organ Segmentation and Cancer Detection from Computed Tomography `</b>` `<br/>`
+[Jie Liu](https://ljwztc.github.io) `<sup>`1 `</sup>`, [Yixiao Zhang](https://scholar.google.com/citations?hl=en&user=lU3wroMAAAAJ) `<sup>`2 `</sup>`, [Jie-Neng Chen](https://scholar.google.com/citations?hl=en&user=yLYj88sAAAAJ) `<sup>`2 `</sup>`,  [Junfei Xiao](https://lambert-x.github.io) `<sup>`2 `</sup>`, [Yongyi Lu](https://scholar.google.com/citations?hl=en&user=rIJ99V4AAAAJ) `<sup>`2 `</sup>`, `<br/>`
+[Yixuan Yuan](https://scholar.google.com.au/citations?user=Aho5Jv8AAAAJ&hl=en) `<sup>`1 `</sup>`, [Alan Yuille](https://scholar.google.com/citations?user=FJ-huxgAAAAJ&hl=en) `<sup>`2 `</sup>`, [Yucheng Tang](https://tangy5.github.io) `<sup>`3 `</sup>`, [Zongwei Zhou](https://www.zongweiz.com) `<sup>`2 `</sup>` `<br/>`
 `<sup>`1 `</sup>`City University of Hong Kong,   `<sup>`2 `</sup>`Johns Hopkins University,   `<sup>`3 `</sup>`NVIDIA `<br/>`
 RSNA, 2023 `<br/>`
 [abstract](https://github.com/ljwztc/CLIP-Driven-Universal-Model/blob/main/documents/rnsa_abstract.pdf) | [code](https://github.com/ljwztc/CLIP-Driven-Universal-Model) | slides
@@ -77,7 +77,10 @@ python pred_pseudo.py --data_root_path PATH_TO_IMG_DIR --result_save_path PATH_T
 !git config --global user.name "your-username"
 !git config --global user.email "your-email"
 !git push https://<github Auth token>@github.com/MonarchRyuzaki/CLIP-Driven-Universal-Model-Project.git
-!pip install -r requirements.txt
+!pip install virtualenv
+!virtualenv myenv
+!source myenv/bin/activate
+!pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113 'monai[all]' -r requirements.txt
 !cd pretrained_weights/
 !wget https://github.com/Project-MONAI/MONAI-extra-test-data/releases/download/0.8.1/swin_unetr.base_5000ep_f48_lr2e-4_pretrained.pt
 !wget wget https://www.dropbox.com/s/lh5kuyjxwjsxjpl/Genesis_Chest_CT.pt
