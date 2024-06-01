@@ -234,7 +234,7 @@ def main():
     ### PAOT_123457891213: include 1 2 3 4 5 7 8 9 12 13
     ### PAOT_10_inner: same with NVIDIA for comparison
     ### PAOT_10: original division
-    parser.add_argument('--data_root_path', default='/computenodes/node31/team1/jliu/data/ct_data/', help='data root path')
+    parser.add_argument('--data_root_path', default='/content/CLIP-Driven-Universal-Model-Project/data/', help='data root path')
     parser.add_argument('--data_txt_path', default='./dataset/dataset_list/', help='data txt path')
     parser.add_argument('--batch_size', default=1, help='batch size')
     parser.add_argument('--num_workers', default=8, type=int, help='workers numebr for DataLoader')
@@ -266,4 +266,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python -m torch.distributed.launch --nproc_per_node=2 --master_port=1234 train.py --dist True --uniform_sample
+# CUDA_VISIBLE_DEVICES=0 python -W ignore -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 train.py --dist True --data_root_path /content/CLIP-Driven-Universal-Model-Project/data/ --dataset_list PAOT_10_09 --num_workers 12 --num_samples 4 --cache_dataset --cache_rate 0.6 --uniform_sample

@@ -129,7 +129,8 @@ def main():
     ## logging
     parser.add_argument('--log_name', default='inference', help='The path resume from checkpoint')
     ## model load
-    parser.add_argument('--resume', default='./pretrained_weights/swinunetr.pth', help='The path resume from checkpoint')
+    # parser.add_argument('--resume', default='./pretrained_weights/swinunetr.pth', help='The path resume from checkpoint')
+    parser.add_argument('--resume', default=None, help='The path resume from checkpoint')
     parser.add_argument('--pretrain', default='./pretrained_weights/swin_unetr.base_5000ep_f48_lr2e-4_pretrained.pt', 
                         help='The path of pretrain model')
     parser.add_argument('--backbone', default='swinunetr', help='backbone [swinunetr or unet]')
@@ -207,3 +208,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# CUDA_VISIBLE_DEVICES=0 python -W ignore test.py --resume ./out/epoch_61.pth -data_root_path /content/CLIP-Driven-Universal-Model-Project/data/ --store_result --cache_dataset --cache_rate 0.6

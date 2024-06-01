@@ -126,7 +126,7 @@ python pred_pseudo.py --data_root_path PATH_TO_IMG_DIR --result_save_path PATH_T
 ## 1. Training
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -W ignore -m torch.distributed.launch --nproc_per_node=8 --master_port=1234 train.py --dist True --data_root_path /mnt/zzhou82/PublicAbdominalData/ --num_workers 12 --num_samples 4 --cache_dataset --cache_rate 0.6 --uniform_sample
+# CUDA_VISIBLE_DEVICES=0 python -W ignore -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 train.py --dist True --data_root_path /content/CLIP-Driven-Universal-Model-Project/data/ --dataset_list PAOT_10_09 --num_workers 12 --num_samples 4 --cache_dataset --cache_rate 0.6 --uniform_sample
 ```
 
 ## 2. Validation
