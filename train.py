@@ -266,4 +266,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# CUDA_VISIBLE_DEVICES=0 python -W ignore -m torch.distributed.launch --nproc_per_node=4 --master_port=1234 train.py --dist True --data_root_path /content/CLIP-Driven-Universal-Model-Project/data/ --dataset_list PAOT_10_09 --num_workers 12 --num_samples 4 --cache_dataset --cache_rate 0.6 --uniform_sample
+# !CUDA_VISIBLE_DEVICES=0 python train.py --dataset_list PAOT_10_09 --num_workers 1 --num_samples 4 --cache_dataset --cache_rate 0.6 --uniform_sample
